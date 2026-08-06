@@ -6,6 +6,6 @@ public record DetalheFaixaResponse(
         FaixaResponse faixa,
         Integer m3Cobrados,
         BigDecimal valorUnitario,
-        BigDecimal subTotal
+        BigDecimal subtotal
 ) {
 }

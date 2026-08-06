@@ -6,7 +6,7 @@ import java.util.List;
 public record ResultadoCalculoResponse(
         String categoria,
         Integer consumoTotal,
-        BigDecimal valorTotal,
+        BigDecimal valortotal,
         List<DetalheFaixaResponse> detalhamento
 ) {
 }
