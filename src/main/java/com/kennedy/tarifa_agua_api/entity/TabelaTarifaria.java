@@ -27,6 +27,9 @@ public class TabelaTarifaria {
     @Column(name = "data_vigencia", nullable = false)
     private LocalDate dataVigencia;
 
+    @Column(nullable = false)
+    private Boolean ativo = true;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
