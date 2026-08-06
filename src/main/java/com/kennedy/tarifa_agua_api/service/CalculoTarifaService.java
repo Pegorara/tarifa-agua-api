@@ -41,7 +41,7 @@ public class CalculoTarifaService {
         }
 
         TabelaTarifaria tabelaVigente = tabelaTarifariaRepository
-                .findFirstByAtivoTrueAndDataVigenciaLessThanEqualOrderByDataVigenciaDesc(LocalDate.now())
+                .findFirstByAtivoTrueAndDataVigenciaLessThanEqualOrderByDataVigenciaDescIdDesc(LocalDate.now())
                 .orElseThrow(() -> new RecursoNaoEncontradoException(
                         "Nenhuma tabela tarifária vigente encontrada para a data atual."));
 

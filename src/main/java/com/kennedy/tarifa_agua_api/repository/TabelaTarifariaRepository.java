@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface TabelaTarifariaRepository extends JpaRepository<TabelaTarifaria, Long> {
 
-    Optional<TabelaTarifaria> findFirstByAtivoTrueAndDataVigenciaLessThanEqualOrderByDataVigenciaDesc(LocalDate data);
+    Optional<TabelaTarifaria> findFirstByAtivoTrueAndDataVigenciaLessThanEqualOrderByDataVigenciaDescIdDesc(LocalDate data);
 
     List<TabelaTarifaria> findByAtivoTrue();
 }
